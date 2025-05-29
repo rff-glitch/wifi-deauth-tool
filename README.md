@@ -12,6 +12,7 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Disclaimer ⚠️](#disclaimer-⚠️)
+- [Troubleshooting](#troubleshooting)
 - [Contact](#contact)
 - [License](#license)
 
@@ -27,7 +28,7 @@ This script automates the process of performing a **deauthentication attack** on
 
 - **Automated Deauthentication**: Easily target and disrupt specific Wi-Fi networks with minimal interaction.
 - **Network Scanning**: Quickly detect available Wi-Fi networks in range.
-- **Intuitive Interface**: With emojis and color-coded output for better user experience! 
+- **Intuitive Interface**: With emojis and color-coded output for better user experience! 🌈
 - **Built on Aircrack-ng Tools**: Leverage well-known tools like `airmon-ng`, `airodump-ng`, and `aireplay-ng` for maximum compatibility and power.
 - **Cross-platform**: Works on Linux systems with proper setup. 🐧
 
@@ -46,6 +47,26 @@ Once installed, simply run the script:
 
 ```bash
 bash <script_name>.sh
+```
+
+If you encounter issues running the script, try the following:
+
+1. **Run as Admin**: Ensure you have the necessary permissions by using `sudo`:
+
+    ```bash
+    sudo bash <script_name>.sh
+    ```
+
+2. **Make the script executable**: If you see a "permission denied" error, run:
+
+    ```bash
+    chmod +x <script_name>.sh
+    ```
+
+This will grant execute permissions to the script, and then you can run it normally:
+
+```bash
+./<script_name>.sh
 ```
 
 ---
@@ -76,9 +97,23 @@ I am **NOT** responsible for any misuse of this tool. Always have permission bef
 
 ---
 
+## Troubleshooting 🛠️
+
+- **Script Not Running?**
+  - Try running the script as an administrator using `sudo`.
+  - Ensure the script has execute permissions with `chmod +x <script_name>.sh`.
+  
+- **Missing Aircrack-ng Tools?**
+  - Ensure that **Aircrack-ng** is properly installed by running `airmon-ng`, `airodump-ng`, and `aireplay-ng` individually.
+  
+- **No Networks Found?**
+  - Increase the scan time or check if your Wi-Fi card supports monitoring mode.
+
+---
+
 ## Contact ✉️
 
-For any issues, updates, or contributions, feel free to contact me :  
+For any issues, updates, or contributions, feel free to contact me:  
 **RAEF**
 
 ---
