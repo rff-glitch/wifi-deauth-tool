@@ -127,6 +127,8 @@ if [[ "$restore" =~ ^[Yy]$ ]]; then
   sudo ip link set wlo1 up
   sleep 0.5s 
   sudo service NetworkManager restart
+  sleep 1s 
   echo -e "${GREEN} Wi-Fi should be back now.${Reset}"
+  echo -e "${RED}${BOLD}GB"
 fi
 #by raef
