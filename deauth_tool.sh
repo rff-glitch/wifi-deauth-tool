@@ -115,8 +115,18 @@ read -p "Press ENTER to exit ......"
 sleep 1s 
 echo -e "${RED}${BOLD} exiting ...."
 
-  sudo airmon-ng stop "$card"
-  sudo systemctl restart NetworkManager
+echo -e "${Reset}"
+read -p " Do you want to restore your Wi-Fi connection? (y/n): " restore
 
-
-#by raef 
+if [[ "$restore" =~ ^[Yy]$ ]]; then
+  echo -e "${YELLOW}🛠 Stopping monitor mode and restarting network manager...${Reset}"
+  sudo ip link set wlo1 down
+  sleep 0.5s 
+  sudo iwconfig $card  mode managed 
+  sleep 0.5s
+  sudo ip link set wlo1 up
+  sleep 0.5s 
+  sudo service NetworkManager restart
+  echo -e "${GREEN} Wi-Fi should be back now.${Reset}"
+fi
+#by raef
