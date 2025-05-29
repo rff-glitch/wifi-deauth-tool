@@ -28,7 +28,7 @@ This script automates the process of performing a **deauthentication attack** on
 
 - **Automated Deauthentication**: Easily target and disrupt specific Wi-Fi networks with minimal interaction.
 - **Network Scanning**: Quickly detect available Wi-Fi networks in range.
-- **Intuitive Interface**: With emojis and color-coded output for better user experience! 🌈
+- **Intuitive Interface**: With emojis and color-coded output for better user experience! 
 - **Built on Aircrack-ng Tools**: Leverage well-known tools like `airmon-ng`, `airodump-ng`, and `aireplay-ng` for maximum compatibility and power.
 - **Cross-platform**: Works on Linux systems with proper setup. 🐧
 
